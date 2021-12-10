@@ -5,8 +5,7 @@
 @endsection
 
 @section('content')
-<!-- Section Content -->
-          <div
+    <div
             class="section-content section-dashboard-home"
             data-aos="fade-up"
           >
@@ -18,48 +17,44 @@
                 </p>
               </div>
               <div class="dashboard-content">
-                <div class="row">
-                  <div class="col-12 mt-2">
-                    <ul
-                      class="nav nav-pills mb-3"
-                      id="pills-tab"
-                      role="tablist"
+                <ul class="nav nav-pills" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link active"
+                      id="sell-tab"
+                      data-toggle="tab"
+                      href="#sell"
+                      role="tab"
+                      aria-controls="sell"
+                      aria-selected="true"
+                      >Sell Product</a
                     >
-                      <li class="nav-item" role="presentation">
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link"
+                      id="buy-tab"
+                      data-toggle="tab"
+                      href="#buy"
+                      role="tab"
+                      aria-controls="buy"
+                      aria-selected="false"
+                      >Buy Product</a
+                    >
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="sell"
+                    role="tabpanel"
+                    aria-labelledby="sell-tab"
+                  >
+                    <div class="row mt-3">
+                      <div class="col-12 mt-2">
                         <a
-                          class="nav-link active"
-                          id="pills-home-tab"
-                          data-toggle="pill"
-                          href="#pills-home"
-                          role="tab"
-                          aria-controls="pills-home"
-                          aria-selected="true"
-                          >Sell Product</a
-                        >
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <a
-                          class="nav-link"
-                          id="pills-profile-tab"
-                          data-toggle="pill"
-                          href="#pills-profile"
-                          role="tab"
-                          aria-controls="pills-profile"
-                          aria-selected="false"
-                          >Buy Product</a
-                        >
-                      </li>
-                    </ul>
-                    <div class="tab-content" id="pills-tabContent">
-                      <div
-                        class="tab-pane fade show active"
-                        id="pills-home"
-                        role="tabpanel"
-                        aria-labelledby="pills-home-tab"
-                      >
-                        <a
-                          href="/dashboard-transactions-details.html"
                           class="card card-list d-block"
+                          href="/dashboard-transactions-details.html"
                         >
                           <div class="card-body">
                             <div class="row">
@@ -82,8 +77,8 @@
                           </div>
                         </a>
                         <a
-                          href="/dashboard-transactions-details.html"
                           class="card card-list d-block"
+                          href="/dashboard-transactions-details.html"
                         >
                           <div class="card-body">
                             <div class="row">
@@ -106,8 +101,8 @@
                           </div>
                         </a>
                         <a
-                          href="/dashboard-transactions-details.html"
                           class="card card-list d-block"
+                          href="/dashboard-transactions-details.html"
                         >
                           <div class="card-body">
                             <div class="row">
@@ -130,15 +125,19 @@
                           </div>
                         </a>
                       </div>
-                      <div
-                        class="tab-pane fade"
-                        id="pills-profile"
-                        role="tabpanel"
-                        aria-labelledby="pills-profile-tab"
-                      >
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="buy"
+                    role="tabpanel"
+                    aria-labelledby="buy-tab"
+                  >
+                    <div class="row mt-3">
+                      <div class="col-12 mt-2">
                         <a
-                          href="/dashboard-transactions-details.html"
                           class="card card-list d-block"
+                          href="/dashboard-transactions-details.html"
                         >
                           <div class="card-body">
                             <div class="row">

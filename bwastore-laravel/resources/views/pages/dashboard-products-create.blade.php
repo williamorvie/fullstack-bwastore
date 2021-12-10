@@ -1,21 +1,19 @@
 @extends('layouts.dashboard')
 
 @section('title')
-    Store Dashboard Product Detail
+    Store Dashboard Create
 @endsection
 
 @section('content')
-<!-- Section Content -->
-          <div
+    <div
             class="section-content section-dashboard-home"
             data-aos="fade-up"
           >
             <div class="container-fluid">
               <div class="dashboard-heading">
-                <h2 class="dashboard-title">Create Product</h2>
+                <h2 class="dashboard-title">Add New Product</h2>
                 <p class="dashboard-subtitle">Create your own product</p>
               </div>
-
               <div class="dashboard-content">
                 <div class="row">
                   <div class="col-12">
@@ -25,57 +23,71 @@
                           <div class="row">
                             <div class="col-md-6">
                               <div class="form-group">
-                                <label>Product Name</label>
-                                <input type="text" class="form-control" />
+                                <label for="name">Product Name</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="name"
+                                  aria-describedby="name"
+                                  name="storeName"
+                                  value="Papel La Casa"
+                                />
                               </div>
                             </div>
-
                             <div class="col-md-6">
                               <div class="form-group">
-                                <label>Price</label>
-                                <input type="number" class="form-control" />
+                                <label for="price">Price</label>
+                                <input
+                                  type="number"
+                                  class="form-control"
+                                  id="price"
+                                  aria-describedby="price"
+                                  name="price"
+                                  value="200"
+                                />
                               </div>
                             </div>
-
                             <div class="col-md-12">
                               <div class="form-group">
-                                <label>Kategori</label>
-                                <select name="category" class="form-control">
-                                  <option value="" disabled>
-                                    Select Category
-                                  </option>
-                                </select>
+                                <label for="description">Description</label>
+                                <textarea
+                                  name="descrioption"
+                                  id=""
+                                  cols="30"
+                                  rows="4"
+                                  class="form-control"
+                                >
+The Nike Air Max 720 SE goes bigger than ever before with Nike's tallest Air unit yet for unimaginable, all-day comfort. There's super breathable fabrics on the upper, while colours add a modern edge. Bring the past into the future with the Nike Air Max 2090, a bold look inspired by the DNA of the iconic Air Max 90. Brand-new Nike Air cushioning
+                                </textarea>
                               </div>
                             </div>
-
                             <div class="col-md-12">
                               <div class="form-group">
-                                <label>Description</label>
-                                <textarea name="editor"></textarea>
-                              </div>
-                            </div>
-
-                            <div class="col-md-12">
-                              <div class="form-group">
-                                <label>Thumbnails</label>
-                                <input type="file" class="form-control" />
-                                <p class="text-muted">
+                                <label for="thumbnails">Thumbnails</label>
+                                <input
+                                  type="file"
+                                  multiple
+                                  class="form-control pt-1"
+                                  id="thumbnails"
+                                  aria-describedby="thumbnails"
+                                  name="thumbnails"
+                                />
+                                <small class="text-muted">
                                   Kamu dapat memilih lebih dari satu file
-                                </p>
+                                </small>
                               </div>
                             </div>
                           </div>
-
-                          <div class="row">
-                            <div class="col text-right">
-                              <button
-                                type="submit"
-                                class="btn btn-success px-5"
-                              >
-                                Save Now
-                              </button>
-                            </div>
-                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-2">
+                        <div class="col">
+                          <button
+                            type="submit"
+                            class="btn btn-success btn-block px-5"
+                          >
+                            Save Now
+                          </button>
                         </div>
                       </div>
                     </form>
@@ -87,8 +99,8 @@
 @endsection
 
 @push('addon-script')
-    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
-    <script>
-      CKEDITOR.replace("editor");
-    </script>
+  <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+  <script>
+    CKEDITOR.replace("editor");
+  </script>
 @endpush

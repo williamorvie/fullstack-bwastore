@@ -11,28 +11,23 @@
 
     <title>@yield('title')</title>
 
-    {{-- style --}}
+    <!-- Style Sheet -->
     @stack('prepend-style')
     @include('includes.style')
     @stack('addon-style')
-    
-</head>
+  </head>
 
   <body>
-    {{-- Navbar --}}
+    <!-- Navigation Bar -->
     @include('includes.navbar-auth')
-    
 
-    {{-- Page Content --}}
+    <!-- Page Content -->
     @yield('content')
-    
 
-    {{-- footer --}}
+    <!-- Footer -->
     @include('includes.footer')
 
     <!-- Bootstrap core JavaScript -->
-
-    {{-- script --}}
     @stack('prepend-script')
     @include('includes.script')
     @stack('addon-script')

@@ -13,16 +13,16 @@
               <img src="/images/success.svg" alt="" class="mb-4" />
               <h2>Welcome to Store</h2>
               <p>
-                Kamu sudah berhasil terdaftar<br />
+                Kamu sudah berhasil terdaftar <br />
                 bersama kami. Let’s grow up now.
               </p>
               <div>
-                <a href="/dashboard.html" class="btn btn-success w-50 mt-4"
-                  >My Dashboard</a
-                >
-                <a href="/index.html" class="btn btn-signup w-50 mt-2"
-                  >Go To Shopping</a
-                >
+                <a class="btn btn-success w-50 mt-4" href="/dashboard.html">
+                  My Dashboard
+                </a>
+                <a class="btn btn-signup w-50 mt-2" href="/index.html">
+                  Go To Shopping
+                </a>
               </div>
             </div>
           </div>

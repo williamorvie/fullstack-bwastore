@@ -5,8 +5,7 @@
 @endsection
 
 @section('content')
-<!-- Section Content -->
-          <div
+    <div
             class="section-content section-dashboard-home"
             data-aos="fade-up"
           >
@@ -25,12 +24,11 @@
                     >
                   </div>
                 </div>
-
                 <div class="row mt-4">
                   <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <a
-                      href="dashboard-products-details.html"
                       class="card card-dashboard-product d-block"
+                      href="/dashboard-products-details.html"
                     >
                       <div class="card-body">
                         <img
@@ -45,8 +43,8 @@
                   </div>
                   <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <a
-                      href="dashboard-products-details.html"
                       class="card card-dashboard-product d-block"
+                      href="/dashboard-products-details.html"
                     >
                       <div class="card-body">
                         <img
@@ -61,8 +59,8 @@
                   </div>
                   <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <a
-                      href="dashboard-products-details.html"
                       class="card card-dashboard-product d-block"
+                      href="/dashboard-products-details.html"
                     >
                       <div class="card-body">
                         <img
@@ -77,8 +75,8 @@
                   </div>
                   <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <a
-                      href="dashboard-products-details.html"
                       class="card card-dashboard-product d-block"
+                      href="/dashboard-products-details.html"
                     >
                       <div class="card-body">
                         <img
@@ -93,8 +91,8 @@
                   </div>
                   <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <a
-                      href="dashboard-products-details.html"
                       class="card card-dashboard-product d-block"
+                      href="/dashboard-products-details.html"
                     >
                       <div class="card-body">
                         <img
@@ -110,5 +108,5 @@
                 </div>
               </div>
             </div>
-          </div>
+    </div>
 @endsection

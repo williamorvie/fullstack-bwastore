@@ -5,15 +5,14 @@
 @endsection
 
 @section('content')
-<!-- Section Content -->
-          <div
+    <div
             class="section-content section-dashboard-home"
             data-aos="fade-up"
           >
             <div class="container-fluid">
               <div class="dashboard-heading">
                 <h2 class="dashboard-title">Admin Dashboard</h2>
-                <p class="dashboard-subtitle">This Is BWAStore Admin Panel</p>
+                <p class="dashboard-subtitle">This is BWAStore Administrator Panel</p>
               </div>
               <div class="dashboard-content">
                 <div class="row">
@@ -29,7 +28,7 @@
                     <div class="card mb-2">
                       <div class="card-body">
                         <div class="dashboard-card-title">Revenue</div>
-                        <div class="dashboard-card-subtitle">${{ $revenue }}</div>
+                        <div class="dashboard-card-subtitle">{{ $revenue }}</div>
                       </div>
                     </div>
                   </div>
@@ -42,9 +41,7 @@
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
-          </div>
-    
+    </div>
 @endsection

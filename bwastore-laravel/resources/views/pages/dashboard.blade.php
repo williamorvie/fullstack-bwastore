@@ -5,8 +5,7 @@
 @endsection
 
 @section('content')
-<!-- Section Content -->
-          <div
+    <div
             class="section-content section-dashboard-home"
             data-aos="fade-up"
           >
@@ -42,13 +41,12 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="row mt-3">
                   <div class="col-12 mt-2">
                     <h5 class="mb-3">Recent Transactions</h5>
                     <a
-                      href="/dashboard-transactions-details.html"
                       class="card card-list d-block"
+                      href="/dashboard-transactions-details.html"
                     >
                       <div class="card-body">
                         <div class="row">
@@ -71,8 +69,8 @@
                       </div>
                     </a>
                     <a
-                      href="/dashboard-transactions-details.html"
                       class="card card-list d-block"
+                      href="/dashboard-transactions-details.html"
                     >
                       <div class="card-body">
                         <div class="row">
@@ -95,8 +93,8 @@
                       </div>
                     </a>
                     <a
-                      href="/dashboard-transactions-details.html"
                       class="card card-list d-block"
+                      href="/dashboard-transactions-details.html"
                     >
                       <div class="card-body">
                         <div class="row">
@@ -122,6 +120,5 @@
                 </div>
               </div>
             </div>
-          </div>
-    
+    </div>
 @endsection

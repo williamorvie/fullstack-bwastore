@@ -7,10 +7,9 @@
       data-aos="fade-down"
     >
       <div class="container">
-        <a href="{{ route('home') }}" class="navbar-brand">
-          <img src="/images/logo.svg" alt="logo" />
+        <a class="navbar-brand" href="{{ route('home') }}">
+          <img src="/images/logo.svg" alt="Logo" />
         </a>
-
         <button
           class="navbar-toggler"
           type="button"
@@ -19,25 +18,24 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="{{ route('home') }}" class="nav-link">Home</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ route('home') }}">Home</a>
             </li>
             <li class="nav-item">
-              <a href="{{ route('categories') }}" class="nav-link">Categories</a>
+              <a class="nav-link" href="{{ route('categories') }}">Categories</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Rewards</a>
+              <a class="nav-link" href="#">Rewards</a>
             </li>
             <li class="nav-item">
-              <a href="/" class="nav-link">Sign Up</a>
+              <a class="nav-link" href="/register.html">Sign Up</a>
             </li>
             <li class="nav-item">
               <a
-                href="/"
                 class="btn btn-success nav-link px-4 text-white"
+                href="/login.html"
                 >Sign In</a
               >
             </li>

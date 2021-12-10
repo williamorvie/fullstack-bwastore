@@ -1,12 +1,11 @@
 @extends('layouts.dashboard')
 
 @section('title')
-    Account Settings
+    Store Account
 @endsection
 
 @section('content')
-<!-- Section Content -->
-          <div
+    <div
             class="section-content section-dashboard-home"
             data-aos="fade-up"
           >
@@ -15,14 +14,13 @@
                 <h2 class="dashboard-title">My Account</h2>
                 <p class="dashboard-subtitle">Update your current profile</p>
               </div>
-
               <div class="dashboard-content">
                 <div class="row">
                   <div class="col-12">
                     <form action="">
                       <div class="card">
                         <div class="card-body">
-                          <div class="row">
+                          <div class="row mb-2">
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label for="name">Your Name</label>
@@ -30,12 +28,12 @@
                                   type="text"
                                   class="form-control"
                                   id="name"
+                                  aria-describedby="emailHelp"
                                   name="name"
-                                  value="Angga"
+                                  value="Papel La Casa"
                                 />
                               </div>
                             </div>
-
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label for="email">Your Email</label>
@@ -43,6 +41,7 @@
                                   type="email"
                                   class="form-control"
                                   id="email"
+                                  aria-describedby="emailHelp"
                                   name="email"
                                   value="email@gmail.com"
                                 />
@@ -55,12 +54,12 @@
                                   type="text"
                                   class="form-control"
                                   id="addressOne"
+                                  aria-describedby="emailHelp"
                                   name="addressOne"
                                   value="Setra Duta Cemara"
                                 />
                               </div>
                             </div>
-
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label for="addressTwo">Address 2</label>
@@ -68,12 +67,12 @@
                                   type="text"
                                   class="form-control"
                                   id="addressTwo"
+                                  aria-describedby="emailHelp"
                                   name="addressTwo"
                                   value="Blok B2 No. 34"
                                 />
                               </div>
                             </div>
-
                             <div class="col-md-4">
                               <div class="form-group">
                                 <label for="province">Province</label>
@@ -86,7 +85,6 @@
                                 </select>
                               </div>
                             </div>
-
                             <div class="col-md-4">
                               <div class="form-group">
                                 <label for="city">City</label>
@@ -99,7 +97,6 @@
                                 </select>
                               </div>
                             </div>
-
                             <div class="col-md-4">
                               <div class="form-group">
                                 <label for="postalCode">Postal Code</label>
@@ -112,7 +109,6 @@
                                 />
                               </div>
                             </div>
-
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label for="country">Country</label>
@@ -125,7 +121,6 @@
                                 />
                               </div>
                             </div>
-
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label for="mobile">Mobile</label>
@@ -139,7 +134,6 @@
                               </div>
                             </div>
                           </div>
-
                           <div class="row">
                             <div class="col text-right">
                               <button
